@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px; /* Restricts the content width */
+  margin: auto;
+  padding: 10px;
+}
+
+.course-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.custom-accordion .accordion-header {
+  padding: 8px 12px; /* Reduces padding */
+  font-size: 16px;   /* Slightly smaller font */
+}
+
+.custom-accordion .accordion-button {
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  color: #000;
+  font-weight: bold;
+}
+
+.custom-accordion .accordion-body {
+  padding: 10px 15px;
+  font-size: 14px;      /* Compact font size */
+  line-height: 1.5;     /* Tighter line spacing */
+  max-height: 300px;    /* Set max height for scroll */
+  overflow-y: auto;     /* Enables scrolling */
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-top: none;
+}
+
+/* Scrollbar Styling (Optional) */
+.custom-accordion .accordion-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-accordion .accordion-body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.custom-accordion .accordion-body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

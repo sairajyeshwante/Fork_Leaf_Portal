@@ -1,0 +1,114 @@
+.admin-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.course-management {
+    margin-top: 20px;
+}
+
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Ensures buttons wrap on small screens */
+}
+
+.add-new {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1;
+    min-width: 150px; /* Ensures button has a minimum width */
+    margin-top: 10px; /* Adds space for small screens */
+}
+
+.add-new:hover {
+    background-color: #45a049;
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.item-table th, .item-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.item-table th {
+    background-color: #f2f2f2;
+}
+
+button {
+    margin-right: 5px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #6C8CD5;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .item-table th, .item-table td {
+        padding: 6px; /* Reduced padding for smaller screens */
+    }
+
+    .item-table {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+
+    .table-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .add-new {
+        width: 100%; /* Button takes full width on small screens */
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100%; /* Buttons take full width on small screens */
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .item-table {
+        font-size: 10px; /* Further reduce font size for very small screens */
+    }
+
+    .edit-button, .delete-button {
+        font-size: 10px;
+        width: auto; /* Buttons adjust size */
+    }
+}

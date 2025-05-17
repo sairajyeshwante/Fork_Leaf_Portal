@@ -1,0 +1,72 @@
+/* General Styles for the Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Add Button Styling */
+.add-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: auto; /* Default width for bigger screens */
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+/* Table Styling */
+.coordinator-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.coordinator-table th, .coordinator-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.coordinator-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Make buttons take up full width on smaller screens */
+    .add-btn {
+        width: 100%; /* Full width on smaller screens */
+        padding: 12px; /* Slightly bigger padding */
+        font-size: 18px; /* Increase font size for better readability */
+    }
+
+    /* Table Adjustments for Mobile */
+    .coordinator-table th, .coordinator-table td {
+        padding: 8px; /* Less padding on smaller screens */
+    }
+    
+    .coordinator-table {
+        margin-top: 10px; /* Reduce margin for better fit on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further Adjustments for very small devices like phones */
+    .add-btn {
+        padding: 10px; /* Smaller padding for small screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .coordinator-table th, .coordinator-table td {
+        padding: 6px; /* Further reduce padding for small screens */
+    }
+}

@@ -1,0 +1,123 @@
+/* General styles */
+body {
+  background: linear-gradient(135deg, #ffffff, #f0f2f5);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading */
+h1.text-center {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #070707;
+}
+
+/* Responsive Styles for Title */
+@media (max-width: 768px) {
+  h1.text-center {
+      font-size: 2rem;
+      padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1.text-center {
+      font-size: 1.5rem;
+      padding: 6px 10px;
+  }
+}
+
+/* Form */
+form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0px 0px 4px rgba(40, 167, 69, 0.5);
+}
+
+/* Buttons Styling */
+.container-buttons {
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px;
+}
+
+button {
+  font-weight: bold;
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+  min-width: 100px; /* Ensures the buttons are not too small */
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button[type="reset"],
+button.cancel-btn {
+  background-color: red;
+  color: white;
+}
+
+button[type="reset"]:hover,
+button.cancel-btn:hover {
+  background-color: darkred;
+}
+
+/* Responsive Buttons */
+@media (max-width: 768px) {
+  .container-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  button {
+      width: 100%;
+  }
+}

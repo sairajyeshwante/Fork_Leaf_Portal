@@ -1,0 +1,36 @@
+.notice-card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notice-list {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .notice-item {
+    padding: 15px;
+    margin: 10px 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notice-item h5 {
+    margin: 0;
+  }
+  
+  .notice-item p {
+    margin: 5px 0;
+  }
+  
+  .notice-item small {
+    display: block;
+    text-align: right;
+    color: #6c757d;
+  }
+  
